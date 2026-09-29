@@ -1,0 +1,69 @@
+.risk-map__layout {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.risk-map__map-card {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-map__map-body {
+  padding: 20px;
+  height: 100%;
+  min-height: 480px;
+  display: flex;
+}
+
+.risk-map__side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.risk-map__info-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 13.5px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row__label {
+  color: var(--color-ink-muted);
+}
+
+.info-row__value {
+  font-weight: 600;
+  text-align: right;
+}
+
+.info-row__skeleton {
+  width: 60px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--color-surface-alt);
+}
+
+@media (max-width: 960px) {
+  .risk-map__layout {
+    grid-template-columns: 1fr;
+  }
+  .risk-map__map-card {
+    min-height: 380px;
+  }
+}

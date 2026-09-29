@@ -1,0 +1,49 @@
+.data-table__scroll {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  min-width: 640px;
+}
+
+.data-table thead th {
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-ink-muted);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.data-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink);
+  vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background: var(--color-surface-alt);
+}
+
+.data-table tbody tr.row--named {
+  border-left: 3px solid var(--color-brand-500);
+}
+
+.data-table tbody tr.row--candidate {
+  border-left: 3px solid var(--risk-moderate);
+}
+
+.data-table tbody tr.row--named td:first-child,
+.data-table tbody tr.row--candidate td:first-child {
+  padding-left: 11px;
+}

@@ -1,0 +1,58 @@
+.stat-tile {
+  padding: 4px 2px;
+  min-width: 0;
+}
+
+.stat-tile__label {
+  font-size: 12.5px;
+  color: var(--color-ink-muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.stat-tile__value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: 1.1;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.stat-tile__unit {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+}
+
+.stat-tile__hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--color-ink-faint);
+}
+
+.stat-tile__empty {
+  font-size: 13px;
+  color: var(--color-ink-faint);
+  font-style: italic;
+}
+
+.stat-tile__skeleton {
+  height: 28px;
+  width: 60%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--color-surface-alt) 25%, var(--color-border) 37%, var(--color-surface-alt) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+
+.stat-tile--accent .stat-tile__value {
+  color: var(--color-brand-700);
+}

@@ -1,0 +1,95 @@
+.dashboard,
+.risk-map,
+.relocation,
+.flood-history,
+.analytics,
+.ml-model,
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about__span-2,
+.about__workflow-card {
+  grid-column: span 2;
+}
+
+.about__text {
+  font-size: 13.5px;
+  color: var(--color-ink-muted);
+  line-height: 1.7;
+}
+
+.about__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about__stack-label {
+  font-size: 12px;
+  color: var(--color-ink-faint);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.about__stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about__stack-tag {
+  font-size: 12.5px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  background: var(--color-brand-100);
+  color: var(--color-brand-700);
+  border: 1px solid var(--color-brand-200);
+  font-weight: 500;
+}
+
+.about__workflow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about__workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about__workflow-node {
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--color-brand-900);
+  color: white;
+}
+
+.about__workflow-arrow {
+  color: var(--color-ink-faint);
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__span-2,
+  .about__workflow-card {
+    grid-column: span 1;
+  }
+}

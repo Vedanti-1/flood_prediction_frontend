@@ -1,0 +1,18 @@
+.relocation__summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1180px) {
+  .relocation__summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .relocation__summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

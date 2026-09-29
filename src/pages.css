@@ -1,0 +1,361 @@
+/* src/styles/pages.css */
+/* Dashboard */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+}
+
+.dashboard-map-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-5);
+}
+
+.dashboard-risk-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3);
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+}
+
+.dashboard-risk-legend .item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+}
+
+.dashboard-risk-legend .item .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.dashboard-indicators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.dashboard-indicator {
+  text-align: center;
+  padding: var(--spacing-3);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.dashboard-indicator .value {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.dashboard-indicator .label {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* Risk Map */
+.risk-map-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-5);
+}
+
+.risk-map-controls {
+  display: flex;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-4);
+  flex-wrap: wrap;
+}
+
+.risk-map-controls .form-group {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 0;
+}
+
+.risk-map-info-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+  border: 1px solid var(--color-gray-200);
+}
+
+.risk-map-info-panel .info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+  font-size: var(--font-size-sm);
+}
+
+.risk-map-info-panel .info-row:last-child {
+  border-bottom: none;
+}
+
+.risk-map-info-panel .info-label {
+  color: var(--color-gray-500);
+}
+
+.risk-map-info-panel .info-value {
+  font-weight: 500;
+  color: var(--color-gray-700);
+}
+
+/* Relocation Planning */
+.relocation-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+}
+
+.relocation-summary .stat {
+  text-align: center;
+  padding: var(--spacing-3);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.relocation-summary .stat .value {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.relocation-summary .stat .label {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.relocation-table .source-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.relocation-table .source-badge.source-named {
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.relocation-table .source-badge.source-candidate {
+  background: #faf5ff;
+  color: #7c3aed;
+}
+
+/* Flood History */
+.flood-history-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-5);
+}
+
+.flood-history-comparison {
+  margin-top: var(--spacing-5);
+}
+
+.flood-history-cwc {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-3);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+}
+
+.flood-history-cwc .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-info);
+}
+
+/* Analytics */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-5);
+}
+
+.analytics-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+/* ML Model */
+.ml-model-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ml-model-section .model-card {
+  margin-bottom: var(--spacing-5);
+}
+
+.ml-model-section .model-card .card-title {
+  font-size: var(--font-size-lg);
+}
+
+.ml-model-section .threshold-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.ml-model-section .threshold-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-3);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+}
+
+.ml-model-section .threshold-item .swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.ml-model-section .comparison-chart {
+  margin-top: var(--spacing-4);
+}
+
+/* About */
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section .about-card {
+  margin-bottom: var(--spacing-5);
+}
+
+.about-section .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.about-section .tech-stack .tech {
+  padding: var(--spacing-1) var(--spacing-3);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+}
+
+.about-section .workflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.about-section .workflow .step {
+  padding: var(--spacing-2) var(--spacing-4);
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+.about-section .workflow .arrow {
+  color: var(--color-gray-400);
+  font-size: var(--font-size-xl);
+}
+
+.about-section .data-source-item {
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+  font-size: var(--font-size-sm);
+}
+
+.about-section .data-source-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments for pages */
+@media (max-width: 1024px) {
+  .dashboard-map-section {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .flood-history-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .relocation-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ml-model-section .threshold-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-section .workflow {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .about-section .workflow .arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .relocation-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-map-controls {
+    flex-direction: column;
+  }
+
+  .risk-map-controls .form-group {
+    min-width: unset;
+  }
+
+  .ml-model-section .threshold-grid {
+    grid-template-columns: 1fr;
+  }
+}

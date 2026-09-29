@@ -1,0 +1,80 @@
+.district-select {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.district-select__input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.district-select__input-wrap:focus-within {
+  border-color: var(--color-brand-500);
+  box-shadow: 0 0 0 3px var(--color-brand-100);
+}
+
+.district-select__icon {
+  color: var(--color-ink-faint);
+  flex-shrink: 0;
+}
+
+.district-select__input-wrap input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  color: var(--color-ink);
+  background: transparent;
+}
+
+.district-select__list {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+}
+
+.district-select__list li button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 13.5px;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+.district-select__list li button:hover {
+  background: var(--color-brand-100);
+}
+
+.district-select__list li button.is-active {
+  background: var(--color-brand-500);
+  color: white;
+}
+
+.district-select__empty {
+  padding: 10px;
+  font-size: 13px;
+  color: var(--color-ink-faint);
+  font-style: italic;
+}

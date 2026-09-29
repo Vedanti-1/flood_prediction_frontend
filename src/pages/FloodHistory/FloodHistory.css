@@ -1,0 +1,60 @@
+.flood-history__top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.flood-history__big-value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-brand-700);
+}
+
+.flood-history__big-value--predicted {
+  color: var(--risk-high);
+}
+
+.flood-history__cwc {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.flood-history__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.chip {
+  font-size: 12.5px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  border-color: var(--color-brand-500);
+  color: var(--color-brand-700);
+}
+
+.chip--active {
+  background: var(--color-brand-500);
+  border-color: var(--color-brand-500);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .flood-history__top {
+    grid-template-columns: 1fr;
+  }
+}

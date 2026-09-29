@@ -1,0 +1,34 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 5px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.tag--named {
+  background: var(--color-brand-100);
+  color: var(--color-brand-700);
+  border: 1px solid var(--color-brand-200);
+}
+
+.tag--candidate {
+  background: color-mix(in srgb, var(--risk-moderate) 16%, white);
+  color: color-mix(in srgb, var(--risk-moderate) 70%, black);
+  border: 1px solid color-mix(in srgb, var(--risk-moderate) 40%, white);
+}
+
+.tag--neutral {
+  background: var(--color-surface-alt);
+  color: var(--color-ink-muted);
+  border: 1px solid var(--color-border);
+}
+
+.tag--warning {
+  background: color-mix(in srgb, var(--risk-high) 14%, white);
+  color: color-mix(in srgb, var(--risk-high) 65%, black);
+  border: 1px solid color-mix(in srgb, var(--risk-high) 35%, white);
+}
